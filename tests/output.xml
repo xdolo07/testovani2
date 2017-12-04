@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171204 22:03:32.798" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/ondrac/PycharmProjects/testovani2/tests/contactForm.robot" id="s1" name="contactForm">
+<test id="s1-t1" name="Odeslani_Kontaktniho_Formulare_s_nevalidnim_emailem">
+<kw type="setup" name="Open store main page" library="mainPage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${myStoreUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:32.956" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com'</msg>
+<status status="PASS" endtime="20171204 22:03:42.869" starttime="20171204 22:03:32.955"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:42.869" starttime="20171204 22:03:32.954"></status>
+</kw>
+<kw name="Open contact form" library="contactPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=contact"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:03:42.892" starttime="20171204 22:03:42.870"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="contact-link"]</arg>
+</arguments>
+<msg timestamp="20171204 22:03:42.893" level="INFO">Clicking element 'xpath=//div[@id="contact-link"]'.</msg>
+<status status="PASS" endtime="20171204 22:03:44.143" starttime="20171204 22:03:42.893"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//footer[@id="footer"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:03:44.169" starttime="20171204 22:03:44.143"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${contactTitle}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:44.191" level="INFO">Current page contains text 'Customer service - Contact us'.</msg>
+<status status="PASS" endtime="20171204 22:03:44.191" starttime="20171204 22:03:44.169"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:44.191" starttime="20171204 22:03:42.870"></status>
+</kw>
+<kw name="Input nonValid mail" library="contactPage">
+<arguments>
+<arg>${nonValidEmail}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//input[@id="email"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:03:44.208" starttime="20171204 22:03:44.192"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@id="email"]</arg>
+<arg>${nonValidEmail}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:44.209" level="INFO">Typing text 'email.email.cz' into text field 'xpath=//input[@id="email"]'</msg>
+<status status="PASS" endtime="20171204 22:03:44.440" starttime="20171204 22:03:44.208"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:44.440" starttime="20171204 22:03:44.191"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@id="submitMessage"]</arg>
+</arguments>
+<msg timestamp="20171204 22:03:44.441" level="INFO">Clicking button 'xpath=//button[@id="submitMessage"]'.</msg>
+<status status="PASS" endtime="20171204 22:03:45.319" starttime="20171204 22:03:44.440"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${emailErrText}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:45.352" level="INFO">Current page contains text 'Invalid email address.'.</msg>
+<status status="PASS" endtime="20171204 22:03:45.352" starttime="20171204 22:03:45.320"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20171204 22:03:47.532" starttime="20171204 22:03:45.352"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:47.532" critical="yes" starttime="20171204 22:03:32.954"></status>
+</test>
+<test id="s1-t2" name="Odeslani_kontaktniho_Formulare_s_validnim_emailem_bezZpravy">
+<kw type="setup" name="Open store main page" library="mainPage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${myStoreUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:47.538" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com'</msg>
+<status status="PASS" endtime="20171204 22:03:57.819" starttime="20171204 22:03:47.538"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:57.819" starttime="20171204 22:03:47.537"></status>
+</kw>
+<kw name="Open contact form" library="contactPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=contact"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:03:57.840" starttime="20171204 22:03:57.820"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="contact-link"]</arg>
+</arguments>
+<msg timestamp="20171204 22:03:57.840" level="INFO">Clicking element 'xpath=//div[@id="contact-link"]'.</msg>
+<status status="PASS" endtime="20171204 22:03:59.055" starttime="20171204 22:03:57.840"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//footer[@id="footer"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:03:59.078" starttime="20171204 22:03:59.055"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${contactTitle}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:59.103" level="INFO">Current page contains text 'Customer service - Contact us'.</msg>
+<status status="PASS" endtime="20171204 22:03:59.103" starttime="20171204 22:03:59.079"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:59.103" starttime="20171204 22:03:57.820"></status>
+</kw>
+<kw name="Input valid mail" library="contactPage">
+<arguments>
+<arg>${validEmail}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//input[@id="email"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:03:59.120" starttime="20171204 22:03:59.104"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@id="email"]</arg>
+<arg>${validEmail}</arg>
+</arguments>
+<msg timestamp="20171204 22:03:59.121" level="INFO">Typing text 'email@email.com' into text field 'xpath=//input[@id="email"]'</msg>
+<status status="PASS" endtime="20171204 22:03:59.327" starttime="20171204 22:03:59.121"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:03:59.327" starttime="20171204 22:03:59.103"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@id="submitMessage"]</arg>
+</arguments>
+<msg timestamp="20171204 22:03:59.327" level="INFO">Clicking button 'xpath=//button[@id="submitMessage"]'.</msg>
+<status status="PASS" endtime="20171204 22:04:00.130" starttime="20171204 22:03:59.327"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${messageErrText}</arg>
+</arguments>
+<msg timestamp="20171204 22:04:00.164" level="INFO">Current page contains text 'The message cannot be blank.'.</msg>
+<status status="PASS" endtime="20171204 22:04:00.165" starttime="20171204 22:04:00.131"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20171204 22:04:02.335" starttime="20171204 22:04:00.165"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:02.335" critical="yes" starttime="20171204 22:03:47.537"></status>
+</test>
+<test id="s1-t3" name="Odeslani_kontakniho_formulare_vseValid">
+<kw type="setup" name="Open store main page" library="mainPage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${myStoreUrl}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20171204 22:04:02.338" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com'</msg>
+<status status="PASS" endtime="20171204 22:04:12.484" starttime="20171204 22:04:02.338"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:12.485" starttime="20171204 22:04:02.337"></status>
+</kw>
+<kw name="Open contact form" library="contactPage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=contact"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:04:12.511" starttime="20171204 22:04:12.486"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="contact-link"]</arg>
+</arguments>
+<msg timestamp="20171204 22:04:12.511" level="INFO">Clicking element 'xpath=//div[@id="contact-link"]'.</msg>
+<status status="PASS" endtime="20171204 22:04:13.727" starttime="20171204 22:04:12.511"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//footer[@id="footer"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:04:13.753" starttime="20171204 22:04:13.727"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${contactTitle}</arg>
+</arguments>
+<msg timestamp="20171204 22:04:13.775" level="INFO">Current page contains text 'Customer service - Contact us'.</msg>
+<status status="PASS" endtime="20171204 22:04:13.775" starttime="20171204 22:04:13.754"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:13.775" starttime="20171204 22:04:12.485"></status>
+</kw>
+<kw name="Select subject form" library="contactPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//select[@id="id_contact"]</arg>
+</arguments>
+<msg timestamp="20171204 22:04:13.776" level="INFO">Clicking element 'xpath=//select[@id="id_contact"]'.</msg>
+<status status="PASS" endtime="20171204 22:04:13.910" starttime="20171204 22:04:13.776"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//select[@id="id_contact"]/option[2]</arg>
+</arguments>
+<msg timestamp="20171204 22:04:13.913" level="INFO">Clicking element 'xpath=//select[@id="id_contact"]/option[2]'.</msg>
+<status status="PASS" endtime="20171204 22:04:14.272" starttime="20171204 22:04:13.910"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:14.273" starttime="20171204 22:04:13.775"></status>
+</kw>
+<kw name="Input valid mail" library="contactPage">
+<arguments>
+<arg>${validEmail}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//input[@id="email"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:04:14.311" starttime="20171204 22:04:14.274"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//input[@id="email"]</arg>
+<arg>${validEmail}</arg>
+</arguments>
+<msg timestamp="20171204 22:04:14.312" level="INFO">Typing text 'email@email.com' into text field 'xpath=//input[@id="email"]'</msg>
+<status status="PASS" endtime="20171204 22:04:14.905" starttime="20171204 22:04:14.311"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:14.905" starttime="20171204 22:04:14.273"></status>
+</kw>
+<kw name="Input message" library="contactPage">
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//textarea[@id="message"]</arg>
+</arguments>
+<status status="PASS" endtime="20171204 22:04:14.926" starttime="20171204 22:04:14.906"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//textarea[@id="message"]</arg>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20171204 22:04:14.927" level="INFO">Typing text 'test' into text field 'xpath=//textarea[@id="message"]'</msg>
+<status status="PASS" endtime="20171204 22:04:15.050" starttime="20171204 22:04:14.926"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:15.051" starttime="20171204 22:04:14.905"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@id="submitMessage"]</arg>
+</arguments>
+<msg timestamp="20171204 22:04:15.052" level="INFO">Clicking button 'xpath=//button[@id="submitMessage"]'.</msg>
+<status status="PASS" endtime="20171204 22:04:15.878" starttime="20171204 22:04:15.052"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${passText}</arg>
+</arguments>
+<msg timestamp="20171204 22:04:15.909" level="INFO">Current page contains text 'Your message has been successfully sent to our team.'.</msg>
+<status status="PASS" endtime="20171204 22:04:15.909" starttime="20171204 22:04:15.879"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20171204 22:04:18.080" starttime="20171204 22:04:15.910"></status>
+</kw>
+<status status="PASS" endtime="20171204 22:04:18.081" critical="yes" starttime="20171204 22:04:02.336"></status>
+</test>
+<status status="PASS" endtime="20171204 22:04:18.083" starttime="20171204 22:03:32.800"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="contactForm" pass="3">contactForm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

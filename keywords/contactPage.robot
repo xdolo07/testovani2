@@ -6,7 +6,7 @@ Open contact form
     Wait Until Page Contains Element    xpath=//a[@href="http://automationpractice.com/index.php?controller=contact"]
 	Click Element	xpath=//div[@id="contact-link"]
 	Wait Until Page Contains Element    xpath=//footer[@id="footer"]
-	Page Should Contain	Customer service - Contact us
+	Page Should Contain	${contactTitle}
 
 Select subject form
     Click element   xpath=//select[@id="id_contact"]

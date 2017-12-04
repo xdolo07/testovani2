@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a302f35c-d2be-403e-8b70-2e497b7d0442" name="Default" comment="" />
+    <list default="true" id="a302f35c-d2be-403e-8b70-2e497b7d0442" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/keywords/contactPage.robot" afterPath="$PROJECT_DIR$/keywords/contactPage.robot" />
+      <change beforePath="$PROJECT_DIR$/tests/contactForm.robot" afterPath="$PROJECT_DIR$/tests/contactForm.robot" />
+      <change beforePath="$PROJECT_DIR$/variables/variables.robot" afterPath="$PROJECT_DIR$/variables/variables.robot" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +18,11 @@
       <file leaf-file-name="contactForm.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/contactForm.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#228#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variables.robot" pinned="false" current-in-tab="false">
+      <file leaf-file-name="variables.robot" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/variables/variables.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="75">
+              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactPage.robot" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contactPage.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keywords/contactPage.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="450">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -90,9 +96,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/keywords/mainPage.robot" />
-        <option value="$PROJECT_DIR$/variables/variables.robot" />
-        <option value="$PROJECT_DIR$/keywords/contactPage.robot" />
         <option value="$PROJECT_DIR$/tests/contactForm.robot" />
+        <option value="$PROJECT_DIR$/keywords/contactPage.robot" />
+        <option value="$PROJECT_DIR$/variables/variables.robot" />
       </list>
     </option>
   </component>
@@ -247,7 +253,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#0#228#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -301,14 +309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keywords/mainPage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/semestralka/Tests/PAS/Forgot_Password.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -317,10 +317,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/variables/variables.robot">
+    <entry file="file://$PROJECT_DIR$/tests/contactForm.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keywords/contactPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keywords/mainPage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="46" lean-forward="false" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -333,21 +353,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/contactForm.robot">
+    <entry file="file://$PROJECT_DIR$/variables/variables.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keywords/contactPage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
